@@ -1,0 +1,248 @@
+/* ==UserStyle==
+@name           eec-cn.com - 2021/4/15下午7:16:08
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("eec-cn.com"),
+domain("ee-c.lcu.edu.cn") {
+    .course-container {
+        box-shadow: 0 0 10px -3px #00000053;
+        transition: all .1s ease;
+    }
+    .course-container:hover {
+        transform: scale(1.02);
+    }
+    .course-container:active {
+        transform: scale(0.99);
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu {
+        display: flex;
+        flex-direction: column;
+        /*         position: fixed; */
+        /*         left:0; */
+        width: 150px;
+        overflow: hidden;
+        height: 100%;
+        min-width: 0;
+        padding: 0px 0px 15px;
+        z-index: 100;
+        box-shadow: none;
+        background: #f9f9fb;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu,
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-title,
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-right {
+        width: 100%;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-title {
+        position: fixed;
+        left: 150px;
+        background: #fff;
+        /*         box-shadow: 3px 0 5px -1px #00000053; */
+        border-bottom: 1px solid #00000012;
+        z-index: 20;
+        padding-left: 35px;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .course-tab-menu:hover {
+        background-color: #efefef;
+    }
+    .course-tab-menu.active {
+        /*         color:#fff!important; */
+        background-color: #67aef734;
+        border-radius: 10px;
+        border: none!important;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div.course-tab-menu {
+        border-radius: 10px 0 0 10px;
+        width: 100%;
+        /*         margin-bottom:5px; */
+        transition: all .4s ease;
+        display: flex;
+        justify-content: center;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div:nth-child(2) {}
+    body>div.qst-app-container>div.t_layout>div.course-layout {
+        flex-direction: row;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div:nth-child(2)>div {
+        margin-top: 50px!important;
+        border-radius: 10px;
+        /*         width:100%; */
+        /*         max-width:100vw!important; */
+    }
+    body {
+        background-color: #fefefe;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-right>div {
+        box-sizing: padding-box;
+        padding: 10px 0 10px 10px;
+        width: 100%;
+        margin: 0 0 5px 0;
+        border-radius: 10px;
+        transition: all .4s ease;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-right>div:hover {
+        background: #67aef7;
+        color: #fff;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div:before {
+        font-family: iconfont;
+        margin-right: 10px;
+        color: #4f91fb;
+    }
+    .course-tab-menu.active::before {
+        /*         color:#fff!important; */
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div:nth-child(1):before {
+        content: "\e649";
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div:nth-child(2):before {
+        content: "\e63b";
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div:nth-child(3):before {
+        content: "\e64c";
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div:nth-child(4):before {
+        content: "\e645";
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div:nth-child(5):before {
+        content: "\e6bc";
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div:nth-child(6):before {
+        content: "\e648";
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div:nth-child(2)>div>div>.homework-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div:nth-child(2)>div>div>div>.list-container {
+        width: calc(50% - 6px * 2);
+        box-sizing: padding-box;
+        margin: 10px 6px;
+        /*         height:max-content; */
+        max-height: 1000px;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header {
+        background: #fff;
+        z-index: 200;
+        box-shadow: 0 0 10px -1px #00000023;
+        min-width: 0;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-logo {
+        width: 320px;
+        margin: 0 0 0 25px;
+        background: url(https://www.eec-cn.com/static/images/home_logo.png) no-repeat center/contain;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-logo>img {
+        display: none;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-right {
+        color: #000;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-center {
+        margin-left: 20px;
+        width: 100%;
+        flex: 1;
+        justify-content: flex-start;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-center>div.header-menu-item {
+        line-height: 35px;
+        border-radius: 18px;
+        color: #000;
+        transition: all .4s ease;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-center>div.header-menu-item:hover {
+        background: #00000013;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-center>div.header-menu-item.active {
+        background: #00000013;
+        color: #000;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__classType {
+        float: left;
+        width: 50%;
+        margin: 15px 0;
+        padding: 0;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__classType>div {
+        width: max-content;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__classType>div>span.qst-tecs-src-student-group-studentGroup__courseType {
+        display: none;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__classType>div>div.qst-tecs-src-student-group-studentGroup__subjectListStyle {
+        margin: 0;
+        padding: 0;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__classType>div>div>div.total {
+        border-radius: 20px;
+        margin: 0 5px;
+        padding: 0 12px;
+        line-height: 30px;
+        transition: all .4s ease;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__classType>div>div>div.total:hover {
+        background: #00000015;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__classType>div>div>div.total.active {
+        background: #67adf7;
+        color: #fff;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__twoButton {
+        width: 50%;
+        float: left;
+        margin: 15px 0;
+        justify-content: flex-end;
+    }
+    body>div.qst-app-container>div.t_layout>div.qst-tecs-src-student-group-studentGroup_>div.qst-tecs-src-student-group-studentGroup__twoButton>button {
+        margin: 0 10px;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div>div>div>div>div>div.left-content>div>div:nth-child(3) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div>div>div>div>div>div.left-content>div>div:nth-child(3) {
+        height: auto;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div>div>div>div>div>div.left-content {
+        align-items: flex-start;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div>div>div>div>div>div.right-top-do-homwork {
+        box-sizing: padding-box;
+        display: flex;
+        height: calc(100% - 20px);
+        align-items: center;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-title>span>div.course-name {
+        max-width: 100vw;
+    }
+    body>div.qst-app-container>div.t_layout>div.course-layout>div.course-menu>div.course-tabmenu>div:nth-child(7) {
+        border-top: 1px solid #00000023;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-right>div.hoverable-item {
+        line-height: 35px;
+        border-radius: 18px;
+    }
+    body>div.qst-app-container>div.t_layout>div.page-header>div.page-header-right>div.hoverable-item:hover {
+        background: #00000015;
+    }
+}
