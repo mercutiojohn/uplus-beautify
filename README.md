@@ -24,7 +24,9 @@
 1. 安装Stylus Chrome (或Edge) 插件；
 2. 下载CSS文件，全选并复制； (注意编码)
 3. 添加新样式；
+![](./instructions/add-new-style.png)
 4. 将模板删除并粘贴，完成。
+![](./instructions/save.png)
 
 ## 历史版本预览
 
